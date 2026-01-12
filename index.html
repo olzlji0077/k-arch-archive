@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>K-Arch Archive</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mwk4jta.css">
+    <link rel="icon" type="Image/x-icon" href="image/pattern.png">
+    <style>
+       body {
+            background-color: #F7F2E9; 
+            margin: 0; padding: 0;
+            font-family: "kepler-std", serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    /* Header styles */
+         header {
+                margin-top: 80px; 
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    #maintitle {
+            font-size: 42px;
+            font-weight: 700;
+            color: #2D5A47;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    .intro-box {
+            width: 85%;
+            max-width: 1100px; 
+            height: 600px;
+            /*Background Image*/
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url("image/homepage-background.jpeg") no-repeat center center/cover;
+            border: 2px solid #2D5A47; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            box-shadow: 0 10px 30px rgba(45, 90, 71, 0.1);
+        }
+    .text-box {
+            max-width: 750px;
+            padding: 40px;
+            text-align: justify;
+            line-height: 28px;
+        }
+
+    .text-box p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    /*Button*/
+        .button {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 120px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            border: 1px solid #ffffff;
+            padding: 12px 35px;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 15px;
+            transition: 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #9E2A2B; 
+            border-color: #9E2A2B;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="maintitle">K-Arch Archive</h1>
+    </header>
+
+    <div class="intro-box">
+        <div class="text-box">
+            <p>I am proposing an online collection of Korean traditional architecture and its visual influence on contemporary buildings. Currently, examples of traditional Korean architecture and modern buildings influenced by it are often presented separately, either as historical documentation or as contemporary architectural projects. Although individual examples of this architecture exist online, they are rarely presented together in a centralized and curated format. This gap is what motivated me to create this project. I want this website to serve as a resource for others who, like me, are interested in how traditional architecture can be reinterpreted and reimagined in contemporary contexts.</p>
+
+            <div class="button">
+                <a href="tradition.html" class="nav-button">Tradition</a>
+                <a href="modern.html" class="nav-button">Modern</a>
+            </div>
+        </div>
+    </div>
+
+</body>
