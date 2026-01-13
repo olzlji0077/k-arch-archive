@@ -78,6 +78,34 @@
             border-color: #9E2A2B;
             color: white;
         }
+        /*spin*/
+
+        .pattern-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;;
+        }
+        .pattern-layer img {
+            position: absolute;
+            width: 300px; 
+            height: 300px;
+            opacity: 0.8; 
+        }
+
+        .pos1 { top: 10%; left: 5%; }
+        .pos2 { top: 40%; left: 80%; }
+        .pos3 { top: 75%; left: 10%; }
+
+        .spin {
+            animation: spin 15s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -96,5 +124,9 @@
             </div>
         </div>
     </div>
-
+<div class="pattern-layer">
+    <img src="image/Dancheong1.png" class="spin pos1">
+    <img src="image/Dancheong2.png" class="spin pos2">
+    <img src="image/Dancheong3.png" class="spin pos3">
+</div>
 </body>
