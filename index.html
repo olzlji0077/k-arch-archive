@@ -47,6 +47,7 @@
             padding: 40px;
             text-align: justify;
             line-height: 28px;
+            background-color: rgba(0, 0, 0, 0.333)
         }
 
     .text-box p {
@@ -94,13 +95,47 @@
             height: 300px;
             opacity: 0.8; 
         }
+        .middle-pattern-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .middle-pattern-layer img {
+            position: absolute;
+            width: 350px; 
+            height: 350px;
+            opacity: 0.8; 
+        }
+        .bigger-pattern-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .bigger-pattern-layer img {
+            position: absolute;
+            width: 400px; 
+            height: 400px;
+            opacity: 0.8; 
+        }
 
-        .pos1 { top: 10%; left: 5%; }
-        .pos2 { top: 40%; left: 80%; }
+        .pos1 { top: 0%; left: 1%; }
+        .pos2 { top: 30%; left: 74%; }
         .pos3 { top: 75%; left: 10%; }
+        .pos4 { top: 45%; left: 80%; }
+        .pos5 { top: 70%; left: 75%; }
+        .pos6 { top: 55%; left: 2%; }
 
         .spin {
-            animation: spin 15s linear infinite;
+            animation: spin 30s linear infinite;
+        }
+        .slower-spin {
+            animation: spin 60s linear infinite;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -124,9 +159,16 @@
             </div>
         </div>
     </div>
-<div class="pattern-layer">
-    <img src="image/Dancheong1.PNG" class="spin pos1">
-    <img src="image/Dancheong2.PNG" class="spin pos2">
-    <img src="image/Dancheong3.PNG" class="spin pos3">
+<div class="middle-pattern-layer">
+    <img src="image/Dancheong6.PNG" class="spin pos5">
+    <img src="image/Dancheong7.PNG" class="spin pos6">
 </div>
+<div class="pattern-layer">
+    <img src="image/Dancheong3.PNG" class="spin pos3">
+    <img src="image/Dancheong8.PNG" class="spin pos2">
+</div>
+<div class="bigger-pattern-layer">
+    <img src="image/Dancheong1.PNG" class="slower-spin pos1">
+    <img src="image/Dancheong4.PNG" class="slower-spin pos4">
+
 </body>
