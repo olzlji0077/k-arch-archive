@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Arch Archive - Modern</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mwk4jta.css">
+    <link rel="icon" type="image/x-icon" href="image/pattern.png">
+    <style>
+        body {
+            background-color: #F7F2E9; 
+            margin: 0; 
+            padding: 60px;
+            font-family: "kepler-std", serif;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #2E4057; 
+            padding-bottom: 20px;
+            margin-bottom: 60px;
+        }
+
+        .nav-bar a { 
+            text-decoration: none; 
+            color: #1a1a1a; 
+            font-weight: 700; 
+        }
+        
+        .section-title {
+            font-size: 32px;
+            color: #2E4057; 
+            margin-bottom: 40px;
+        }
+
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .item-card {
+            background-color: #ffffff;
+            border-left: 5px solid #2E4057; 
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.03);
+        }
+
+        .item-card:hover { 
+            transform: translateY(-10px); 
+            border-left-color: #D4A13B;
+        }
+
+        .item-image {
+            width: 100%;
+            height: 300px;
+            background-color: #eeeeee;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item-text { 
+            padding: 25px; 
+        }
+
+        .item-text h3 { 
+            margin: 0 0 10px 0; 
+            color: #2E4057;
+            font-size: 22px; 
+        }
+
+        .item-text p { 
+            font-size: 15px; 
+            color: #555555; 
+            line-height: 24px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html">← K-Arch Archive</a>
+        <div>
+            <a href="tradition.html" style="margin-right:30px;">Tradition</a>
+            <a href="modern.html" style="color: #D4A13B;">Modern</a>
+        </div>
+    </div>
+
+    <h2 class="section-title">Archiving: Modern Influence</h2>
+
+    <div class="archive-grid">
+        <a href="https://www.archdaily.com/1026151/seolhaeone-clubhouse-joho-architecture" class="item-card">
+            <div class="item-image" style="background-image: url('image/seolhaeone.jpg');"></div>
+            <div class="item-text">
+                <h3>Seolhaeone Clubhouse</h3>
+                <p>A contemporary reinterpretation of the "Cheoma" (Eaves). The dynamic, sweeping curves of the traditional roofline are translated into modern geometric panels and materials. </p>
+            </div>
+        </a>
+
+        <a href="https://www.stayfolio.com/en/journal/magazines/podo-hotel" class="item-card">
+            <div class="item-image" style="background-image: url('image/podo_hotel.jpg');"></div>
+            <div class="item-text">
+                <h3>Jeju Podo Hotel</h3>
+                <p>Inspired by the "Oreums" (volcanic cones) of Jeju and the organic rooflines of traditional Jeju thatched houses. It masterfully translates the spatial flow of traditional Korean dwellings into a luxurious, continuous interior experience.</p>
+            </div>
+        </a>
+
+        <a href="https://vmspace.com/eng/report/report_view.html?base_seq=MTg0NA==" class="item-card">
+            <div class="item-image" style="background-image: url('image/french_embassy.jpg');"></div>
+            <div class="item-text">
+                <h3>French Embassy in Korea</h3>
+                <p>Designed by a pioneer of Korean modern architecture. It is celebrated for the dramatic, upward-curving concrete rooflines that pay homage to the exaggerated curves of Hanok eaves, blending Le Corbusier's brutalism with Korean lyricism.</p>
+            </div>
+        </a>
+
+        <a href="https://vmspace.com/eng/report/report_view.html?base_seq=NjU0" class="item-card">
+            <div class="item-image" style="background-image: url('image/swiss_embassy.jpg');"></div>
+            <div class="item-text">
+                <h3>Swiss Embassy in Seoul</h3>
+                <p>A modern masterpiece inspired by the Hanok's "C-shaped" (ㄷ-shape) and "Square" (ㅁ-shape) courtyard layouts. It uses a massive wooden structure to recreate the spatial depth and the relationship between the Madang and the surrounding rooms.</p>
+            </div>
+        </a>
+
+        <a href="https://www.archdaily.com/463492/ga-on-jai-iroje-khm-architects" class="item-card">
+            <div class="item-image" style="background-image: url('image/gaonjai.jpg');"></div>
+            <div class="item-text">
+                <h3>GaOnJai</h3>
+                <p>A private residence that reinterprets the traditional "Madang" and "Ru" (elevated pavilion). The jagged, dynamic rooflines and the fragmented volumes create a modern "mountainous" landscape, echoing the spatial sequence of traditional Korean architecture. </p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
